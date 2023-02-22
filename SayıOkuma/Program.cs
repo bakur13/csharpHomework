@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class MainClass
 {
@@ -8,11 +8,11 @@ class MainClass
         string[] onlar = { "", "on", "yirmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan" };
         string[] binler = { "", "bin", "milyon", "milyar" };
 
-        Console.Write("0-9999 arası bir sayı girin: ");
+        Console.Write("0-99999999 arası bir sayı girin: ");
         int sayi;
-        while (!int.TryParse(Console.ReadLine(), out sayi) || sayi < 0 || sayi > 9999)
+        while (!int.TryParse(Console.ReadLine(), out sayi) || sayi < 0 || sayi > 99999999)
         {
-            Console.Write("Geçersiz giriş. Lütfen 0-9999 arası bir sayı girin: ");
+            Console.Write("Geçersiz giriş. Lütfen 0-99999999 arası bir sayı girin: ");
         }
 
         if (sayi == 0)
