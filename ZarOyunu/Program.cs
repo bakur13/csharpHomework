@@ -16,19 +16,19 @@ class MainClass
         }
 
         int zar1, zar2;
-        int tries = 0;
+        int sayac = 0;
 
         while (true)
         {
             zar1 = rnd.Next(1, 7);
             zar2 = rnd.Next(1, 7);
-            tries++;
+            sayac++;
 
-            Console.WriteLine("{0}. deneme: {1} ve {2}", tries, zar1, zar2);
+            Console.WriteLine("{0}. deneme: {1} ve {2}", sayac, zar1, zar2);
 
             if ( zar2 ==  userNumber&&zar1==userNumber)
             {
-                Console.WriteLine("{0} ve {1} atıldı, tebrikler! {2} denemede bildiniz.", zar1, zar2, tries);
+                Console.WriteLine("{0} ve {1} atıldı, tebrikler! {2} denemede bildiniz.", zar1, zar2, sayac);
                 break;
             }
         }
